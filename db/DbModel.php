@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\db;
+namespace hj\phpmvc\db;
 
-use app\core\Application;
-use app\core\Model;
+use hj\phpmvc\Application;
+use hj\phpmvc\Model;
 
 abstract class DbModel extends Model {
     abstract public static function tableName(): string;

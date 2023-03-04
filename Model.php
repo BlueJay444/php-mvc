@@ -1,7 +1,7 @@
 <?php
 
-namespace app\core;
-use app\core\Request;
+namespace hj\phpmvc;
+use hj\phpmvc\Request;
 
 abstract class Model
 {

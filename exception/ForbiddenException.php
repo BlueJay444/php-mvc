@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\exception;
+namespace hj\phpmvc\exception;
 
 class ForbiddenException extends \Exception{
     protected $message = "You dont't have permission to access this page";

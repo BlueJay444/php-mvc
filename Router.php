@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace hj\phpmvc;
 use app\controllers;
-use app\core\exception\NotFoundException;
+use hj\phpmvc\exception\NotFoundException;
 
 class Router {
 

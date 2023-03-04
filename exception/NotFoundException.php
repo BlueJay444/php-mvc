@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\exception;
+namespace hj\phpmvc\exception;
 
 class NotFoundException extends \Exception{
     protected $message = 'Page Not Found';

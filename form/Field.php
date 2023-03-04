@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\form;
+namespace hj\phpmvc\form;
 
 
 class Field extends BaseField
@@ -11,7 +11,7 @@ class Field extends BaseField
     public const TYPE_EMAIL = 'email';
     public string $type;
    
-    public function __construct(\app\core\Model $model, $attribute)
+    public function __construct(\hj\phpmvc\Model $model, $attribute)
     {
         $this->type = self::TYPE_TEXT;
         parent::__construct($model, $attribute);

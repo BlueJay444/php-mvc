@@ -1,7 +1,7 @@
 <?php 
 
-namespace app\core;
-use app\core\middlewares\BaseMiddleware;
+namespace hj\phpmvc;
+use hj\phpmvc\middlewares\BaseMiddleware;
 
 class Controller {
 

@@ -1,8 +1,8 @@
 <?php 
 
-namespace app\core;
+namespace hj\phpmvc;
 
-use app\core\db\Database;
+use hj\phpmvc\db\Database;
 
 class Application{
 

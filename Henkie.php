@@ -1,4 +1,4 @@
 <?php
 
-namespace app\core;
+namespace hj\phpmvc;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\db;
+namespace hj\phpmvc\db;
 
-use app\core\Application;
-use app\core\migrations;
+use hj\phpmvc\Application;
+use hj\phpmvc\migrations;
 
 class Database 
 {

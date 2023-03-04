@@ -1,8 +1,8 @@
 <?php 
 
-namespace app\core;
+namespace hj\phpmvc;
 
-use app\core\db\DbModel;
+use hj\phpmvc\db\DbModel;
 
 abstract class UserModel extends DbModel{
     abstract public function getDisplayName(): string;

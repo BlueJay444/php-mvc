@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\form;
-use app\core\Model;
-use app\core\form\Field;
+namespace hj\phpmvc\form;
+use hj\phpmvc\Model;
+use hj\phpmvc\form\Field;
 
 class Form{
 
