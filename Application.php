@@ -6,6 +6,11 @@ use hj\phpmvc\db\Database;
 
 class Application{
 
+    const EVENT_BEFORE_REQUEST = 'beforeRequest';
+    const EVENT_AFTER_REQUEST = 'afterRequest';
+
+    protected $eventListeners = [];
+
     public string $layout = 'main';
     public static string $ROOT_DIR;
     public Router $router;
@@ -81,6 +86,19 @@ class Application{
     public static function isGuest()
     {
         return !self::$app->user;
+    }
+
+    public function on($eventName, $callback)
+    {
+        $this->eventListeners[$eventName][] = $callback;
+    }
+
+    public function triggerEvent($eventName)
+    {
+        $callbacks = $this->eventListeners[$eventName] ?? [];
+        foreach($callbacks as $callback){
+            call_user_func($callback);
+        }
     }
 
 }
